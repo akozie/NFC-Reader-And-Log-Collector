@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NFC Reader And Log Collector</string>
+    <string name="nfc_message_title">NFC Message</string>
+    <string name="device_doesnt_have_nfc">Device does not have NFC support</string>
+    <string name="nfc_message">NFC is not enabled, go to device settings to enable</string>
+    <string name="settings">Settings</string>
+    <string name="nfc_read_card_message">Tap your NFC enabled card on the NFC antenna of your device \nNOTE: The antenna is usually at the back of most NFC enabled devices</string>
+</resources>
