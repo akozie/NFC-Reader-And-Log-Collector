@@ -1,6 +1,7 @@
 package com.isw.nfcreaderandlogcollector
 
 import com.isw.nfcreaderandlogcollector.utils.PanMasker
+import com.isw.nfcreaderandlogcollector.utils.PanMasker.formatExpiry
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -25,6 +26,13 @@ class PanMaskerTest {
         val shortPan = "12345"
         val masked = PanMasker.maskFromDigits(shortPan)
         assertEquals(shortPan, masked)
+    }
+
+    @Test
+    fun testExpiryFormatting() {
+        val rawExpiry = "2610"
+        val formatted = formatExpiry(rawExpiry)
+        assertEquals("10/26", formatted)
     }
 
 }
